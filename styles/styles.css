@@ -16,6 +16,18 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@300&family=Satisfy&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --grijs: #899CAO;
+    --donkergroen: #1C2B32;
+}
 
 
 /*////////////////////////
