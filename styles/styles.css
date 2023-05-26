@@ -16,7 +16,7 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700;800;900&display=swap');
 
 *{
     box-sizing: border-box;
@@ -47,7 +47,7 @@ header p{
 }
 header h1{
     font-size: 76px;
-    font-weight: 900;
+    font-weight: bold;
 }
 .zoekbalk {
    max-width: 1000px;
@@ -66,7 +66,7 @@ header h1{
     }
 input::placeholder{
     color: var(--donkergroen);
-    font-weight: bolder;
+
 }
 .zoekbalk button {
     border-radius: 0 50px 50px 0;
