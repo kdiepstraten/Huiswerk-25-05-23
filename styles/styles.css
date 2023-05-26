@@ -39,16 +39,15 @@ header {
     background-image: url("../assets/images/mountains.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 500px;
     text-align: center;
-    max-width: 1000px;
-
-
-
-    /* - moet mijn afbeelding in mijn HTML?
-        - Mijn margins kloppen niet. Rechts heb ik meer margin staan terwijl ik geen margin wil hebben.
-         - Hoe maak ik mijn button groter?*/
-
+    }
+header p{
+    margin-bottom: 20px;
+}
+header h1{
+    font-size: 76px;
+    font-weight: 900;
 }
 .zoekbalk {
    max-width: 1000px;
@@ -58,16 +57,24 @@ header {
 }
 .zoekbalk input {
     margin: -20px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 50px 0 0 50px;
     border: 2px solid var(--donkergroen);
-    width: 200px;
-
+    width: 350px;
+    height: 60px;
+    padding: 10px;
+    background: transparent;
+    }
+input::placeholder{
+    color: var(--donkergroen);
+    font-weight: bolder;
 }
 .zoekbalk button {
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 50px 50px 0;
     border: 2px solid var(--donkergroen);
     background-color: var(--donkergroen);
     color: white;
+    height: 60px;
+    padding: 10px;
 }
 
 /*////////////////////////
@@ -80,16 +87,37 @@ main{
 }
 main a{
     color: var(--grijs);
+
 }
 main a:hover{
     text-decoration-line: none;
 }
-main section button{
-    background-color: var(--donkergroen);
-    border-radius: 40px;
-    color: white;
-    height: 60px;
-    width: 200px;
+section article{
+    border: 1px solid var(--grijs);
+    border-radius: 8px;
+    margin: 40px;
+    box-shadow: 2px 8px 9px 7px rgba(0,0,0,0.12);
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+section article p{
+    padding: 50px 100px 0 100px;
+}
+section article div{
+    padding: 0 100px 50px 100px;
+}
+.quote{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+.people{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 10px;
+    vertical-align: middle;
 }
 .helpdesk h2{
     text-align: center;
@@ -97,7 +125,49 @@ main section button{
 .helpdesk img{
     width: 100%;
     border-radius: 8px;
+    margin: 20px;
 }
+.helpdesk p{
+    margin-bottom: 20px;
+}
+.helpdesk button{
+    background-color: var(--donkergroen);
+    border-radius: 40px;
+    color: white;
+    height: 60px;
+    width: 150px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+section h2{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+section details{
+    margin: 20px;
+}
+section details:hover{
+    cursor: pointer;
+}
+section details p{
+    background-color: var(--grijs);
+    border-radius: 8px;
+    color: white;
+    padding: 30px;
+}
+
 /*////////////////////////
     4. Footer
 ////////////////////////*/
+footer p{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 45px;
+    font-size: small;
+    margin-top: 40px;
+}
